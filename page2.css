@@ -1,5 +1,6 @@
 * {
   margin: 0px;
+
   padding: 0px;
   box-sizing: border-box;
 }
@@ -40,7 +41,7 @@
 }
 
 h1 {
-  text-align: center;
+  width: 11%;
   margin: auto;
   margin-top: 25px;
 }
@@ -158,42 +159,11 @@ h1 {
   color: white;
   border-radius: 8px;
   border: none;
+  margin-right: 10px;
 }
 
 #nextPage > button:hover {
   background-color: #fc2802;
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-}
-
-@media all and (min-width: 768px) and (max-width: 1023px) {
-}
-
-@media all and (min-width: 0px) and (max-width: 767px) {
-  #crauser {
-    position: relative;
-  }
-
-  #crauser > img {
-    height: 230px;
-  }
-
-  #crauser > button {
-    border: 1px solid grey;
-    font-size: 15px;
-    height: 40px;
-    width: 40px;
-  }
-
-  #filterbook {
-    width: 90%;
-    text-align: center;
-    margin-top: 20px;
-  }
-
-  #filterbook > select {
-    font-size: 20px;
-    height: 25px;
-    margin-left: 20px;
-  }
 }

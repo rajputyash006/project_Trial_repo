@@ -10,6 +10,8 @@ header {
   /* border-radius: 10px; */
   height: 70px;
   font-size: 20px;
+  position: sticky;
+  top: 0px;
 }
 #container {
   width: 1280px;
