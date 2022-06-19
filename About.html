@@ -97,10 +97,10 @@
                     <h2>IDEAKART</h2>
                 </a>
                 <!-- homepage will be link in this  page -->
-
+    
                 <form>
                     <input type="text" placeholder="search...." class="search">
-                    <button type="submit">Search</button>
+                    <input type="submit" value="Search" id="searchbooks">
                 </form>
                 <div id="card">
                     <div><a href="About.html">About</a></div>
@@ -149,23 +149,22 @@
 
 </html>
 <script>
-  let arr=[
-    {image:"https://ca.slack-edge.com/T034U5VTU6T-U039DC14TDM-159a6c817bc0-512",name:"Aakarsh Patel"},
-    {image:"https://ca.slack-edge.com/T034U5VTU6T-U036V2K6L2G-a24f945f9d01-512",name:"Deepanshi Singh"},
-    {image:"https://ca.slack-edge.com/T034U5VTU6T-U038D5SJ936-694374c6419d-512",name:"Prity Paul"},
-    {image:"https://ca.slack-edge.com/T034U5VTU6T-U037VKYUVN3-3fbe6776cf0a-512",name:"Yash Rajput"},
-    {image:"https://ca.slack-edge.com/T034U5VTU6T-U037Y3DEFEX-6c838c6a4509-512",name:"Anuj singh"},
-    {image:"https://ca.slack-edge.com/T034U5VTU6T-U038CAXSNEB-fba9669ac682-512",name:"Prashant Mishra"}
+    let arr = [
+        { image: "https://ca.slack-edge.com/T034U5VTU6T-U039DC14TDM-159a6c817bc0-512", name: "Aakarsh Patel" },
+        { image: "https://ca.slack-edge.com/T034U5VTU6T-U036V2K6L2G-a24f945f9d01-512", name: "Deepanshi Singh" },
+        { image: "https://ca.slack-edge.com/T034U5VTU6T-U038D5SJ936-694374c6419d-512", name: "Prity Paul" },
+        { image: "https://ca.slack-edge.com/T034U5VTU6T-U037VKYUVN3-3fbe6776cf0a-512", name: "Yash Rajput" },
+        { image: "https://ca.slack-edge.com/T034U5VTU6T-U037Y3DEFEX-6c838c6a4509-512", name: "Anuj singh" },
+        { image: "https://ca.slack-edge.com/T034U5VTU6T-U038CAXSNEB-fba9669ac682-512", name: "Prashant Mishra" }
 
-];
-arr.forEach(function(ele)
-{
-    let tr=document.createElement("div");
-    let td1=document.createElement("img");
-    td1.src=ele.image;
-    td2=document.createElement("h2");
-    td2.innerText=ele.name;
-    tr.append(td1,td2);
-    document.querySelector(".team").append(tr);
-});
+    ];
+    arr.forEach(function (ele) {
+        let tr = document.createElement("div");
+        let td1 = document.createElement("img");
+        td1.src = ele.image;
+        td2 = document.createElement("h2");
+        td2.innerText = ele.name;
+        tr.append(td1, td2);
+        document.querySelector(".team").append(tr);
+    });
 </script>

@@ -123,6 +123,7 @@ h1 {
   justify-content: space-around;
 }
 #box12 > div > button:first-child {
+  width: 40%;
   border: none;
   background-color: #2874f0;
   color: white;

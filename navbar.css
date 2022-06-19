@@ -51,7 +51,7 @@ label {
   margin-top: 5px;
 }
 
-button {
+#searchbooks {
   width: 100px;
   padding: 6px;
   margin-left: -5px;
@@ -64,8 +64,9 @@ button {
   background-color: white;
   border-left: 1px solid black;
 }
-button:hover {
-  background-color: rgb(229, 224, 224);
+#check-box > form > input[type="submit"]:hover {
+  background-color: #fc2802;
+  color: white;
 }
 #card {
   display: grid;

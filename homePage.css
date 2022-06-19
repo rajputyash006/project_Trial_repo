@@ -122,6 +122,7 @@ h1 {
   justify-content: space-around;
 }
 #box12 > div > button:first-child {
+  width: 40%;
   border: none;
   background-color: #2874f0;
   color: white;
@@ -166,7 +167,7 @@ h1 {
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
-@media all and (min-width: 768px) and (max-width: 1023px) {
+/* @media all and (min-width: 768px) and (max-width: 1023px) {
 }
 
 @media all and (min-width: 0px) and (max-width: 767px) {
@@ -196,4 +197,4 @@ h1 {
     height: 25px;
     margin-left: 20px;
   }
-}
+} */
