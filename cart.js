@@ -192,12 +192,12 @@ function apply_coupon() {
     totalCartValue = +totalCartValue * 0.7;
     document.querySelector("#display").innerText = "Coupon applied sucessfully";
     console.log(total);
-
+    let totalatm = parseFloat(totalCartValue).toFixed(2);
     document.querySelector("#discount").innerText = "Discount : " + "30%";
     document.querySelector("#dsp_last_total").innerText =
-      "Amount to pay : Rs. " + totalCartValue;
+      "Amount to pay : Rs. " + totalatm;
 
-    localStorage.setItem("last_total_to_pay", totalCartValue);
+    localStorage.setItem("last_total_to_pay", totalatm);
     // location.href = "payment.html";
   } else {
     document.querySelector("#display").innerText = "Invalid Coupon";
@@ -205,6 +205,13 @@ function apply_coupon() {
 }
 
 document.querySelector("#finalpay").addEventListener("click", function () {
-  localStorage.setItem("last_total_to_pay", totalCartValue);
-  location.href = "payment.html";
+  let loginFromLs = localStorage.getItem("loginOrNot");
+  let totalatm = parseFloat(totalCartValue).toFixed(2);
+  if (loginFromLs == "true") {
+    localStorage.setItem("last_total_to_pay", totalatm);
+    location.href = "payment.html";
+  } else {
+    alert("Login Required");
+    location.href = "login.html";
+  }
 });

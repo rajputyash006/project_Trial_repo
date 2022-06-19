@@ -93,7 +93,7 @@
     <div id="paycart">
         <div id="toppay">
             <h1>Payment</h1>
-            <h1 id="totalpayamount">0 Rs</h1>
+            <h1 id="totalpayamount"></h1>
         </div>
         <div id="payimg">
             <img src="https://1361832452.rsc.cdn77.org/gesa/files/2560px-MasterCard_Logo.svg__3.png?1626945996"
@@ -153,7 +153,8 @@
 
 <script>
     totalpayamount = localStorage.getItem("last_total_to_pay");
-    console.log(totalpayamount);
+    document.querySelector("#totalpayamount").innerHTML = totalpayamount + " " + "₹";
+
 
 
     localStorage.setItem("cardData", JSON.stringify({
